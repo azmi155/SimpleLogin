@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    tools:context="com.kodeanlab.simplelogin.view.login.LoginActivity">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="25dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:src="@drawable/gd"
+                android:layout_marginBottom="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/usernameId"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/bg_form"
+                android:hint="username"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp" />
+
+            <EditText
+                android:id="@+id/passwordId"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_form"
+                android:hint="password"
+                android:inputType="textPassword"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp" />
+
+            <TextView
+                android:layout_marginTop="26dp"
+                android:gravity="center"
+                android:text="Pround Of Your Code"
+                android:textSize="15sp"
+                android:fontFamily="cursive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/bg_button"
+                android:onClick="loginAction"
+                android:text="Login" />
+
+        </LinearLayout>
+
+</FrameLayout>
