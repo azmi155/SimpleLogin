@@ -42,4 +42,10 @@ public class SplashActivity extends AppCompatActivity implements SplashContract.
         finish();
     }
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        splashPresenter.detachView();
+    }
+
 }
